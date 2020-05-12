@@ -58,7 +58,9 @@ export default function MapComponent() {
             ))}
 
             {data !== null && data.lines.map((l, index) => (
-                <Polyline key={index} positions={[[l.latA, l.longA], [l.latB, l.longB]]} color={gerLineColor(l)} weight={2} />
+                <Polyline key={index} positions={[[l.latA, l.longA], [l.latB, l.longB]]} color={gerLineColor(l)} weight={2}>
+                <Tooltip>{l.ABDuration + ' minutes'}</Tooltip>
+                </Polyline>
             ))}
         </LeafletMap>
     )
