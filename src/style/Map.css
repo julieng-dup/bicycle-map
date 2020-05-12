@@ -1,0 +1,17 @@
+.leaflet-container {
+    width: 95vw;
+    height: 95vh;
+}
+
+
+.leaflet-div-icon {
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 2px !important;
+}
+
+.leaflet-div-icon > p {
+    width: fit-content;
+    visibility: hidden;
+}
